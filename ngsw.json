@@ -9,12 +9,15 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.d0b016e8e8f535e4566c.js",
+        "/main.2c776f3795a00ac40a42.js",
         "/polyfills.7a0e6866a34e280f48e7.js",
         "/runtime.a66f828dca56eeb90e02.js",
-        "/styles.5c0802af45c8679eb19c.css"
+        "/styles.09daf20d1fd67a24c8b0.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Material\\+Icons",
+        "https:\\/\\/fonts\\.gstatic\\.com\\/s\\/materialicons\\/v29\\/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw\\.woff2"
+      ]
     },
     {
       "name": "assets",
@@ -33,7 +36,32 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "mapLayers",
+      "patterns": [
+        "https:\\/\\/wwwpre\\.metoffice\\.gov\\.uk\\/public\\/data\\/LayerCache\\/OBSERVATIONS\\/ItemBbox\\/[^\\/]*",
+        "https:\\/\\/a\\.tile\\.openstreetmap\\.org\\/6\\/[^\\/]*\\/[^\\/]*\\.png"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 10800000,
+      "timeoutMs": 60000,
+      "version": 1
+    },
+    {
+      "name": "capabilities",
+      "patterns": [
+        "\\/assets\\/data\\/[^\\/]*",
+        "http:\\/\\/wwwpre\\.metoffice\\.gov\\.uk\\/public\\/data\\/LayerCache\\/GetCapabilities\\/Item\\/[^\\/]*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 5,
+      "maxAge": 300000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
@@ -44,11 +72,11 @@
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "d3948ef33b8aef60f7bda6885c59aca305079cec",
-    "/main.d0b016e8e8f535e4566c.js": "e18eca0166fe8c85e24a5ebaf9f8d8fab33b1294",
+    "/index.html": "1c5d72535b24e893f15eb9609e6c4d53f12e4f1f",
+    "/main.2c776f3795a00ac40a42.js": "83ed348451ac25c0dd5a6bce390037e946ae0290",
     "/polyfills.7a0e6866a34e280f48e7.js": "9f0b8341c0a0caec1581da2f255eb5dbb8e12303",
     "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
-    "/styles.5c0802af45c8679eb19c.css": "a61c45971b455dcbe1592b32933c74d978242d0e"
+    "/styles.09daf20d1fd67a24c8b0.css": "fa726949f27301196b94cc098bdd5b18e632bef1"
   },
   "navigationUrls": [
     {
